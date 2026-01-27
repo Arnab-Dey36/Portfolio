@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Portfolio<span>.</span></a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h4 class="subtitle">Hello, I'm</h4>
+                <h1 class="title">Arnab Dey</h1>
+                <!-- <h2 class="profession">Aspiring Full Stack Web Developer</h2> -->
+                <span id="element"></span> <!-- for animation -->
+                <p class="description"> Welcome to my portfolio website! </p>
+                <div class="hero-buttons">
+                    <a href="./files/ResumeArn.pdf" class="btn btn-primary">Download CV</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image image-hover-wrapper">
+                <img src="images/profile image.jpg" alt="Arnab Dey" data-name="profile image" data-type="JPG">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section-->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am an aspiring Full Stack Web Developer with a strong passion for building scalable,
+                        user-centric web applications with a solid foundation in HTML, CSS, JavaScript, and modern
+                        frameworks, along with back-end development using Node.js, Express, and databases, I
+                        continuously explore new tools and best practices in web development.</p>
+                    <p>I am dedicated to strengthening my skills in API development, database management,
+                        authentication, and performance optimization, while also emphasizing clean code and intuitive
+                        user experiences. By staying updated with the latest industry trends and technologies, my goal
+                        is to design and develop impactful web applications that solve real-world problems and deliver
+                        value through robust, data-driven, and scalable solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section-->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skill">
+                <img src="./images/HTML1.png" alt="HTML5" title="HTML">
+                <img src="./images/Css1.png" alt="CSS3" title="CSS">
+                <img src="./images/Js1.png" alt="JavaScript" title="JavaScript">
+                <img src="./images/React1.png" alt="React" title="React">
+                <img src="./images/Node.js2.png" alt="Node.js" title="Node.js">
+                <img src="./images/Mongo.png" alt="MongoDB" title="MongoDB">
+                <img src="./images/Express.png" alt="Express.js" title="Express.js">
+                <img src="./images/C++.png" alt="C++" title="C++">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work section" id="work">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="work-grid">
+                <div class="work-item" data-category="web">
+                    <div class="work-img">
+                        <img src="images/Weather.png" alt="Project 1">
+                        <div class="work-overlay">
+                            <h3>Weather App</h3>
+                            <p>Real-time weather updates using OpenWeatherMap API.</p>
+                            <a href="https://shiny-biscotti-whatherapp-my.netlify.app/" class="work-link"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="app">
+                    <div class="work-img">
+                        <img src="https://static.vecteezy.com/system/resources/previews/019/646/423/large_2x/tic-tac-toe-colored-clip-art-for-kids-tic-tac-toe-game-red-and-green-colored-clip-art-fun-draw-game-free-vector.jpg"
+                            alt="Project 2">
+                        <div class="work-overlay">
+                            <h3>Tic Tac Toe</h3>
+                            <p>A simple Tic Tac Toe game built with HTML, CSS, and JavaScript.</p>
+                            <a href="https://timely-capybara-tictactoe-my.netlify.app/" class="work-link"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kolkata, West Bengal, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>adey78905@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p id="phoneNumber" style="cursor: pointer; user-select: none;">+91 XXXX-XXXXXX</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://x.com/CHAYAN78905"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/arnab-dey-681a0228a/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Arnab-Dey36/Arnab-Dey36"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">© 2025-2026 Arnab Dey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="first.js"></script>
+    <!-- for animation -->
+    <script>
+        var typed = new Typed("#element", {
+            strings: ["Aspiring Full Stack Web Developer", "Tech Enthusiast", "Problem Solver"],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
